@@ -3491,7 +3491,7 @@ spec:
         - name: proc
           mountPath: /host/proc/
         - name: longhorn
-          mountPath: /data/longhorn/
+          mountPath: /var/lib/longhorn/
           mountPropagation: Bidirectional
         - name: longhorn-grpc-tls
           mountPath: /tls-files/
