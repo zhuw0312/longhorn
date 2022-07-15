@@ -63,6 +63,7 @@ metadata:
     app.kubernetes.io/version: v1.3.0
 data:
   default-setting.yaml: |-
+    default-data-path: /data/longhorn/
 ---
 # Source: longhorn/templates/storageclass.yaml
 apiVersion: v1
@@ -3517,7 +3518,7 @@ spec:
           path: /proc/
       - name: longhorn
         hostPath:
-          path: /var/lib/longhorn/
+          path: /data/longhorn/
       - name: longhorn-grpc-tls
         secret:
           secretName: longhorn-grpc-tls
