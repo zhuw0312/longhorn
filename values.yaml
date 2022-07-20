@@ -55,7 +55,7 @@ service:
 
 persistence:
   defaultClass: true
-  defaultFsType: xfs
+  defaultFsType: ext4
   defaultClassReplicaCount: 3
   defaultDataLocality: disabled # best-effort otherwise
   reclaimPolicy: Retain
