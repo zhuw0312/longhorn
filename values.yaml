@@ -82,7 +82,7 @@ defaultSettings:
   backupTargetCredentialSecret: ~
   allowRecurringJobWhileVolumeDetached: ~
   createDefaultDiskLabeledNodes: ~
-  defaultDataPath: /data/longhorn
+  defaultDataPath: ~
   defaultDataLocality: ~
   replicaSoftAntiAffinity: ~
   replicaAutoBalance: ~
