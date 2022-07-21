@@ -17,13 +17,15 @@ systemctl enable --now iscsid
 
 # delete
 kubectl create -f https://raw.githubusercontent.com/longhorn/longhorn/v1.3.0/uninstall/uninstall.yaml
+
 kubectl delete -f https://raw.githubusercontent.com/longhorn/longhorn/v1.3.0/deploy/longhorn.yaml
+
 kubectl delete -f https://raw.githubusercontent.com/longhorn/longhorn/v1.3.0/uninstall/uninstall.yaml
 # delete check
 curl -s https://raw.githubusercontent.com/longhorn/longhorn/v0.8.1/scripts/cleanup.sh |bash -s v062
+
 curl -s https://raw.githubusercontent.com/longhorn/longhorn/v0.8.1/scripts/cleanup.sh |bash -s v070
 # kubectl get crd
 NAME                                          CREATED AT
-......
 engineimages.longhorn.io                      2020-07-08T08:52:25Z
 engines.longhorn.io                           2020-07-08T08:52:23Z
