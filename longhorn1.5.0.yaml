@@ -67,7 +67,7 @@ data:
       numberOfReplicas: "3"
       staleReplicaTimeout: "30"
       fromBackup: ""
-      fsType: "ext4"
+      fsType: "xfs"
       dataLocality: "disabled"
 ---
 # Source: longhorn/templates/crds.yaml
